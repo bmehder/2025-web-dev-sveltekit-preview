@@ -49,4 +49,10 @@
 		list-style: none;
 		padding: 0;
 	}
+
+	a:hover:not(.button) {
+		text-decoration: underline;
+		text-underline-offset: 4px;
+		text-decoration-thickness: 2px;
+	}
 </style>

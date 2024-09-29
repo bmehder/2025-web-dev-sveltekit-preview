@@ -50,6 +50,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 p {
 	color: var(--color-grey);
 }
@@ -63,6 +67,11 @@ p {
 	border-radius: 1.5rem;
 	transition: 150ms ease-in-out;
 	transition-property: background, opacity;
+}
+
+.button:hover {
+	opacity: 0.85;
+	text-decoration: none;
 }
 
 /* Utilities */

@@ -4,14 +4,14 @@
 	export let text =
 		'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam perspiciatis esse tempore.'
 	export let href = '/'
-	export let linkText = 'Get Started'
+	export let linkText = 'Learn More &raquo;'
 </script>
 
 <div class="block course">
 	<img {src} alt="" width="56" height="56" />
 	<h3>{title}</h3>
 	<p>{text}</p>
-	<a {href}>{linkText}</a>
+	<a {href}>{@html linkText}</a>
 </div>
 
 <style>
