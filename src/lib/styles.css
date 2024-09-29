@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root {
-	--color-blue-900: hsl(233, 54%, 16%);
 	--color-blue-600: hsl(234, 25%, 52%);
-	--color-pink-600: hsl(341, 92%, 62%);
+	--color-blue-900: hsl(233, 54%, 16%);
 	--color-pink-300: hsl(341, 100%, 83%);
+	--color-pink-600: hsl(341, 92%, 62%);
 	--color-grey: hsl(232, 10%, 56%);
 	--color-white: hsl(0, 0%, 100%);
 	--gradient-pink: linear-gradient(hsl(13, 100%, 64%), hsl(322, 87%, 55%));
@@ -71,13 +71,16 @@ p {
 }
 
 .button:hover {
-	opacity: 0.8;
+	outline: 4px solid white;
 	text-decoration: none;
 }
 
 /* Utilities */
 .boxed {
-	width: min(100% - 3rem, 70em);
+	--width: 70rem;
+	--padding: 1.5rem;
+
+	width: min(100% - (var(--padding) * 2), var(--width));
 	margin-inline: auto;
 }
 

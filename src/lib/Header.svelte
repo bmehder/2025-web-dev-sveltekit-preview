@@ -50,6 +50,10 @@
 		padding: 0;
 	}
 
+	.button:hover {
+		background: var(--gradient-pink);
+	}
+
 	a:hover:not(.button) {
 		text-decoration: underline;
 		text-underline-offset: 4px;

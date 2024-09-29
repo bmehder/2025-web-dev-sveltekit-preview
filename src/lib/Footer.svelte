@@ -4,12 +4,12 @@
 			<img
 				class="logo"
 				src="/logo-light.svg"
-				alt="Skilled Home"
+				alt="Skilled Logo"
 				width="111"
 				height="28"
 			/>
 		</a>
-		<a href="" class="button purple">Get Started</a>
+		<a href="/" class="button purple">Get Started</a>
 	</div>
 </footer>
 
