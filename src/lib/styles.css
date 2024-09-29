@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+	--color-blue-900: hsl(233, 54%, 16%);
+	--color-blue-600: hsl(234, 25%, 52%);
+	--color-pink-600: hsl(341, 92%, 62%);
+	--color-pink-300: hsl(341, 100%, 83%);
+	--color-grey: hsl(232, 10%, 56%);
+	--color-white: hsl(0, 0%, 100%);
+	--gradient-pink: linear-gradient(hsl(13, 100%, 64%), hsl(322, 87%, 55%));
+	--gradient-purple: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+}
+
+/* Resets */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/* outline: 1px solid lime; */
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+p,
+li {
+	max-width: 65ch;
+}
+
+/* Defaults */
+body {
+	font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.2;
+	font-weight: 800;
+	text-wrap: balance;
+}
+
+a {
+	color: var(--color-pink-600);
+	text-decoration: none;
+}
+
+p {
+	color: var(--color-grey);
+}
+
+.button {
+	display: inline-block;
+	font-size: 1.125rem;
+	line-height: 1.5;
+	font-weight: 700;
+	padding: 0.75rem 1.75rem;
+	border-radius: 1.5rem;
+	transition: 150ms ease-in-out;
+	transition-property: background, opacity;
+}
+
+/* Utilities */
+.boxed {
+	width: min(100% - 3rem, 70em);
+	margin-inline: auto;
+}
+
+.auto-fit {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+	gap: 3rem;
+}
+
+.overlay {
+	--deg: 0deg;
+	--color: #0004;
+	--start: var(--color);
+	--end: var(--color);
+
+	border-image: fill 0 linear-gradient(var(--deg), var(--start), var(--end));
+}
+
+.rounded-overlay-container {
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 2rem;
+}
+
+.p-3 {
+	padding: 3rem;
+}
+
+/* Skins */
+.dark {
+	background: var(--color-blue-900);
+	color: var(--color-white);
+}
+
+.pink {
+	background: var(--gradient-pink);
+	color: var(--color-white);
+}
+
+.purple {
+	background: var(--gradient-purple);
+	color: var(--color-white);
+}

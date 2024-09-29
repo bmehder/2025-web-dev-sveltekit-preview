@@ -1,0 +1,52 @@
+<header>
+	<div class="boxed flex-container">
+		<a href="/">
+			<img
+				class="logo"
+				src="/logo-dark.svg"
+				alt="Skilled Home"
+				width="111"
+				height="28"
+			/>
+		</a>
+		<nav>
+			<ul>
+				<li>
+					<a href="/">Home</a>
+				</li>
+				<li>
+					<a href="/about">About</a>
+				</li>
+				<li>
+					<a href="/blog">Blog</a>
+				</li>
+				<li>
+					<a href="/contact">Contact</a>
+				</li>
+				<li>
+					<a href="" class="button dark"> Get Started</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<style>
+	.flex-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1.5rem;
+		padding-block: 1.5rem;
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 1.5rem;
+		list-style: none;
+		padding: 0;
+	}
+</style>
