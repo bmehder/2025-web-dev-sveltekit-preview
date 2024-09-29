@@ -7,7 +7,7 @@
 	export let linkText = 'Learn More &raquo;'
 </script>
 
-<div class="block course">
+<div class="block">
 	<img {src} alt="" width="56" height="56" />
 	<h3>{title}</h3>
 	<p>{text}</p>
@@ -16,17 +16,17 @@
 
 <style>
 	.block {
+		position: relative;
+
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		gap: 1.5rem;
+
 		padding-block: 4rem 3rem;
 		padding-inline: 2rem;
-		border-radius: 1rem;
-	}
 
-	.course {
-		position: relative;
 		background: white;
-		display: grid;
-		gap: 1.5rem;
-		grid-template-rows: auto 1fr auto;
+		border-radius: 1rem;
 	}
 
 	img {

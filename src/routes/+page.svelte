@@ -1,7 +1,7 @@
 <script>
 	import Hero from '$lib/Hero.svelte'
-	import Courses from '$lib/Courses.svelte'
+	import Categories from '$lib/Categories.svelte'
 </script>
 
 <Hero />
-<Courses />
+<Categories />

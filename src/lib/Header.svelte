@@ -1,4 +1,4 @@
-<header class="light-gradient">
+<header>
 	<div class="boxed flex-container">
 		<a href="/">
 			<img
