@@ -1,5 +1,9 @@
+<script>
+	export let title = 'Add title here!'
+</script>
+
 <div class="block pink">
-	<h2>Check out our most popular courses!</h2>
+	<h2>{title}</h2>
 </div>
 
 <style>
@@ -8,6 +12,7 @@
 		padding-inline: 2rem;
 		border-radius: 1rem;
 	}
+
 	h2 {
 		font-size: 1.75rem;
 	}

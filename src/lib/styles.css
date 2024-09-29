@@ -9,6 +9,7 @@
 	--color-white: hsl(0, 0%, 100%);
 	--gradient-pink: linear-gradient(hsl(13, 100%, 64%), hsl(322, 87%, 55%));
 	--gradient-purple: linear-gradient(hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+	--gradient-light: linear-gradient(white, #f0f1ff 40%);
 }
 
 /* Resets */
@@ -56,21 +57,21 @@ a:hover {
 
 p {
 	color: var(--color-grey);
+	text-wrap: pretty;
 }
 
 .button {
 	display: inline-block;
 	font-size: 1.125rem;
-	line-height: 1.5;
 	font-weight: 700;
-	padding: 0.75rem 1.75rem;
+	padding-block: 0.75rem;
+	padding-inline: 1.75rem;
 	border-radius: 1.5rem;
-	transition: 150ms ease-in-out;
-	transition-property: background, opacity;
+	transition: opacity 100ms ease-in-out;
 }
 
 .button:hover {
-	opacity: 0.85;
+	opacity: 0.8;
 	text-decoration: none;
 }
 
@@ -81,9 +82,17 @@ p {
 }
 
 .auto-fit {
+	--min: 16rem;
+
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(min(var(--min), 100%), 1fr));
 	gap: 3rem;
+}
+
+.rounded-overlay-container {
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 2rem;
 }
 
 .overlay {
@@ -93,12 +102,6 @@ p {
 	--end: var(--color);
 
 	border-image: fill 0 linear-gradient(var(--deg), var(--start), var(--end));
-}
-
-.rounded-overlay-container {
-	display: inline-block;
-	overflow: hidden;
-	border-radius: 2rem;
 }
 
 .p-3 {
@@ -119,4 +122,8 @@ p {
 .purple {
 	background: var(--gradient-purple);
 	color: var(--color-white);
+}
+
+.light-gradient {
+	background: var(--gradient-light);
 }
