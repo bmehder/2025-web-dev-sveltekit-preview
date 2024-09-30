@@ -13,7 +13,12 @@
 	<div class="boxed">
 		<div class="auto-fit">
 			{#each data.posts as post}
-				<Card title={post.title} text={post.body} href="/blog/{post.id}" />
+				<Card
+					title={post.title}
+					text={post.body}
+					href="/blog/{post.id}"
+					src="https://picsum.photos/200/200"
+				/>
 			{/each}
 		</div>
 	</div>

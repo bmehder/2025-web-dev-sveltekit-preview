@@ -7,11 +7,11 @@
 	<div class="boxed">
 		<div class="auto-fit">
 			<FeaturedCard title="Check out our most popular categories!" />
-			<Card src="/icons/icon-animation.svg" title="Animation" />
-			<Card src="/icons/icon-business.svg" title="Business" />
-			<Card src="/icons/icon-programming.svg" title="Programming" />
-			<Card src="/icons/icon-design.svg" title="Design" />
-			<Card src="/icons/icon-photography.svg" title="Photography" />
+			<Card icon="/icons/icon-animation.svg" title="Animation" />
+			<Card icon="/icons/icon-business.svg" title="Business" />
+			<Card icon="/icons/icon-programming.svg" title="Programming" />
+			<Card icon="/icons/icon-design.svg" title="Design" />
+			<Card icon="/icons/icon-photography.svg" title="Photography" />
 		</div>
 	</div>
 </section>

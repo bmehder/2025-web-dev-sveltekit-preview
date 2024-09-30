@@ -14,7 +14,7 @@
 					Our modern courses across a range of in-demand skills will give you the
 					knowledge you need to live the life you want.
 				</p>
-				<a href="/" class="button pink">Get Started</a>
+				<a href="/blog" class="button pink">Get Started</a>
 			</div>
 		</div>
 	</div>
