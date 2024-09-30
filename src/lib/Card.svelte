@@ -11,9 +11,13 @@
 <div class="block">
 	{#if icon}
 		<img class="icon" src={icon} alt="" width="56" height="56" />
+		<div class="spacer"></div>
 	{/if}
 	{#if src}
-		<a class="title" {href}><img class="featured-image" {src} alt="" /></a>
+		<!-- <a class="title" {href}><img class="featured-image" {src} alt="" /></a> -->
+		<a class="title" {href}
+			><img class="featured-image" src={src + '?' + Math.random()} alt="" /></a
+		>
 	{/if}
 	<a class="title" {href}><h3>{title}</h3></a>
 	<p>{text}</p>
@@ -28,8 +32,7 @@
 		grid-template-rows: auto auto 1fr auto;
 		gap: 1.5rem;
 
-		padding-block: 4rem 3rem;
-		padding-inline: 2rem;
+		padding: 2rem;
 
 		background: white;
 		border-radius: 1rem;
@@ -39,6 +42,10 @@
 		position: absolute;
 		top: 0;
 		translate: 2rem -50%;
+	}
+
+	.spacer {
+		height: 0.5rem;
 	}
 
 	.featured-image {

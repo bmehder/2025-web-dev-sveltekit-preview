@@ -10,7 +10,7 @@
 
 <section>
 	<div class="boxed flow">
-		<h2>Send us a message</h2>
+		<h2>Send Us a Message</h2>
 		<ContactForm />
 	</div>
 </section>
