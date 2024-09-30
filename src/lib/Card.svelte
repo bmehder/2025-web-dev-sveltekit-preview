@@ -1,6 +1,7 @@
 <script>
 	export let icon = ''
 	export let src = ''
+	export let alt = ''
 	export let title = 'Design'
 	export let text =
 		'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam perspiciatis esse tempore.'
@@ -16,7 +17,7 @@
 	{#if src}
 		<!-- <a class="title" {href}><img class="featured-image" {src} alt="" /></a> -->
 		<a class="title" {href}
-			><img class="featured-image" src={src + '?' + Math.random()} alt="" /></a
+			><img class="featured-image" src={src + '?' + Math.random()} {alt} /></a
 		>
 	{/if}
 	<a class="title" {href}><h3>{title}</h3></a>

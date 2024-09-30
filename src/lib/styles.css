@@ -152,6 +152,10 @@ textarea {
 }
 
 /* Skins */
+.light {
+	background-color: white;
+}
+
 .dark {
 	background: var(--color-blue-900);
 	color: var(--color-white);

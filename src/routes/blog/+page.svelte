@@ -9,7 +9,7 @@
 	</div>
 </section>
 
-<section class="light-gradient">
+<section>
 	<div class="boxed">
 		<div class="auto-fit">
 			{#each data.posts as post}
@@ -27,5 +27,6 @@
 <style>
 	section {
 		padding-block: 3rem;
+		background-color: var(--color-blue-900);
 	}
 </style>
