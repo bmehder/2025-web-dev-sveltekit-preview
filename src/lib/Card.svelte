@@ -6,7 +6,7 @@
 	export let text =
 		'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam perspiciatis esse tempore.'
 	export let href = '/'
-	export let linkText = 'Learn More &raquo;'
+	export let linkText = 'Read More &raquo;'
 </script>
 
 <div class="block">
@@ -16,11 +16,13 @@
 	{/if}
 	{#if src}
 		<!-- <a class="title" {href}><img class="featured-image" {src} alt="" /></a> -->
-		<a class="title" {href}
-			><img class="featured-image" src={src + '?' + Math.random()} {alt} /></a
-		>
+		<a class="title" {href}>
+			<img class="featured-image" src={src + '?' + Math.random()} {alt} />
+		</a>
 	{/if}
-	<a class="title" {href}><h3>{title}</h3></a>
+	<a class="title" {href}>
+		<h3>{title}</h3>
+	</a>
 	<p>{text}</p>
 	<a {href}>{@html linkText}</a>
 </div>
