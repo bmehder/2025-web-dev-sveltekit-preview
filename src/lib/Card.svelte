@@ -8,8 +8,10 @@
 </script>
 
 <div class="block">
-	<img {src} alt="" width="56" height="56" />
-	<h3>{title}</h3>
+	{#if src}
+		<a {href}><img {src} alt="" width="56" height="56" /></a>
+	{/if}
+	<a class="title" {href}><h3>{title}</h3></a>
 	<p>{text}</p>
 	<a {href}>{@html linkText}</a>
 </div>
@@ -47,5 +49,9 @@
 	a {
 		font-size: 1.125rem;
 		font-weight: 700;
+	}
+
+	.title {
+		color: var(--color-blue-900);
 	}
 </style>

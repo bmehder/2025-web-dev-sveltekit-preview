@@ -1,6 +1,21 @@
-<section>
+<script>
+	import Card from '$lib/Card.svelte'
+	export let data
+</script>
+
+<section class="dark">
 	<div class="boxed">
 		<h1>Blog</h1>
+	</div>
+</section>
+
+<section class="light-gradient">
+	<div class="boxed">
+		<div class="auto-fit">
+			{#each data.posts as post}
+				<Card title={post.title} text={post.body} href="/blog/{post.id}" />
+			{/each}
+		</div>
 	</div>
 </section>
 

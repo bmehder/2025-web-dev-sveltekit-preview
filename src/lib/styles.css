@@ -35,7 +35,7 @@ li {
 body {
 	font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
 	font-weight: 500;
-	line-height: 1.5;
+	line-height: 1.6;
 }
 
 h1,
@@ -44,6 +44,10 @@ h3 {
 	line-height: 1.2;
 	font-weight: 800;
 	text-wrap: balance;
+}
+
+h1 {
+	font-size: 2.5rem;
 }
 
 a {
@@ -60,6 +64,7 @@ p {
 	text-wrap: pretty;
 }
 
+button,
 .button {
 	display: inline-block;
 	font-size: 1.125rem;
@@ -70,12 +75,30 @@ p {
 	transition: opacity 100ms ease-in-out;
 }
 
+button:hover,
 .button:hover {
 	outline: 4px solid white;
 	text-decoration: none;
 }
 
+form .button {
+	padding: 1rem;
+	border: none;
+}
+
+input,
+textarea {
+	padding: 1rem;
+	font: inherit;
+	border: 1px solid var(--color-grey);
+	border-radius: 2px;
+}
+
 /* Utilities */
+.flow > * + * {
+	margin-top: 1.5rem;
+}
+
 .boxed {
 	--width: 70rem;
 	--padding: 1.5rem;
@@ -107,6 +130,23 @@ p {
 	border-image: fill 0 linear-gradient(var(--deg), var(--start), var(--end));
 }
 
+.columns {
+	column-width: 20rem;
+	gap: 3rem;
+}
+
+.float-right {
+	float: right;
+}
+
+.p-1 {
+	padding: 1rem;
+}
+
+.p-2 {
+	padding: 2rem;
+}
+
 .p-3 {
 	padding: 3rem;
 }
@@ -129,4 +169,8 @@ p {
 
 .light-gradient {
 	background: var(--gradient-light);
+}
+
+:is(.dark, .pink, .purple) * {
+	color: white;
 }
