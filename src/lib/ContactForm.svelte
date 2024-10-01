@@ -21,7 +21,7 @@
 			<textarea name="message" id="message" rows="10" required></textarea>
 		</div>
 		<div>
-			<button class="button blue">Submit Message</button>
+			<button class="button bg-pink-600 white">Submit Message</button>
 		</div>
 	</div>
 </form>
@@ -42,7 +42,7 @@
 	}
 
 	sup {
-		color: var(--color-pink-600);
+		color: var(--pink-600);
 	}
 
 	.button {
@@ -51,6 +51,6 @@
 	}
 
 	.button:hover {
-		background: var(--color-blue-900);
+		background: var(--blue-900);
 	}
 </style>

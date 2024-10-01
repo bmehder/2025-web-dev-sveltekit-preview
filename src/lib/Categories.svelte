@@ -3,7 +3,7 @@
 	import FeaturedCard from './FeaturedCard.svelte'
 </script>
 
-<section class="light-gradient">
+<section class="bg-gradient-light">
 	<div class="boxed">
 		<div class="auto-fit">
 			<FeaturedCard title="Check out our most popular categories!" />

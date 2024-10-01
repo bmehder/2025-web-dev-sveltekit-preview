@@ -2,8 +2,8 @@
 	import ContactForm from '../../lib/ContactForm.svelte'
 </script>
 
-<section class="dark">
-	<div class="boxed flow">
+<section class="page-title">
+	<div class="boxed">
 		<h1>Contact</h1>
 	</div>
 </section>
@@ -14,9 +14,3 @@
 		<ContactForm />
 	</div>
 </section>
-
-<style>
-	section {
-		padding-block: 3rem;
-	}
-</style>

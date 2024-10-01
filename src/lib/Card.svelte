@@ -5,22 +5,21 @@
 	export let title = 'Design'
 	export let text =
 		'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam perspiciatis esse tempore.'
-	export let href = '/'
+	export let href = '/blog'
 	export let linkText = 'Read More &raquo;'
 </script>
 
-<div class="block">
+<div class="card bg-white">
 	{#if icon}
 		<img class="icon" src={icon} alt="" width="56" height="56" />
 		<div class="spacer"></div>
 	{/if}
 	{#if src}
-		<!-- <a class="title" {href}><img class="featured-image" {src} alt="" /></a> -->
-		<a class="title" {href}>
-			<img class="featured-image" src={src + '?' + Math.random()} {alt} />
+		<a class="blue-900" {href}>
+			<img class="width-100" {src} {alt} />
 		</a>
 	{/if}
-	<a class="title" {href}>
+	<a class="blue-900" {href}>
 		<h3>{title}</h3>
 	</a>
 	<p>{text}</p>
@@ -28,7 +27,7 @@
 </div>
 
 <style>
-	.block {
+	.card {
 		position: relative;
 
 		display: grid;
@@ -37,7 +36,6 @@
 
 		padding: 2rem;
 
-		background: white;
 		border-radius: 1rem;
 	}
 
@@ -51,25 +49,21 @@
 		height: 0.5rem;
 	}
 
-	.featured-image {
+	.width-100 {
 		width: 100%;
 	}
 
 	h3 {
 		font-size: 1.25rem;
+		text-transform: capitalize;
 	}
 
 	p {
 		font-size: 1.125rem;
-		margin: 0;
 	}
 
 	a {
 		font-size: 1.125rem;
 		font-weight: 700;
-	}
-
-	.title {
-		color: var(--color-blue-900);
 	}
 </style>

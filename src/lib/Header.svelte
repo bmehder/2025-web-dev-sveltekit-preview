@@ -24,7 +24,7 @@
 					<a href="/contact">Contact</a>
 				</li>
 				<li>
-					<a href="/" class="button dark"> Get Started</a>
+					<a href="/blog" class="button bg-blue-900 white"> Get Started</a>
 				</li>
 			</ul>
 		</nav>

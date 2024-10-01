@@ -1,5 +1,5 @@
-<section class="dark">
-	<div class="boxed flow">
+<section class="page-title">
+	<div class="boxed">
 		<h1>About</h1>
 	</div>
 </section>
@@ -36,7 +36,7 @@
 	</div>
 </section>
 
-<section class="dark">
+<section class="bg-blue-900 white">
 	<div class="boxed flow">
 		<h2>Subheading</h2>
 
@@ -101,7 +101,7 @@
 </section>
 
 <style>
-	section {
-		padding-block: 3rem;
+	.bg-blue-900 * {
+		color: white;
 	}
 </style>

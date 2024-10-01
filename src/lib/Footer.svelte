@@ -1,4 +1,4 @@
-<footer class="footer dark">
+<footer class="footer bg-blue-900">
 	<div class="boxed flex-container">
 		<a href="/">
 			<img
@@ -9,7 +9,7 @@
 				height="28"
 			/>
 		</a>
-		<a href="/" class="button purple">Get Started</a>
+		<a href="/blog" class="button bg-gradient-purple white">Get Started</a>
 	</div>
 </footer>
 

@@ -1,21 +1,12 @@
 <section class="hero">
 	<div class="boxed">
-		<div class="rounded-overlay-container">
-			<div
-				class="hero-text overlay p-3"
-				style="
-								--deg: 135deg;
-								--start: hsla(233, 54%, 16%, 0.95);
-								--end: hsla(234, 25%, 52%, 0.9);
-							"
-			>
-				<h1>Maximize skill, minimize budget</h1>
-				<p>
-					Our modern courses across a range of in-demand skills will give you the
-					knowledge you need to live the life you want.
-				</p>
-				<a href="/blog" class="button pink">Get Started</a>
-			</div>
+		<div class="hero-text">
+			<h1>Maximize skill, minimize budget</h1>
+			<p>
+				Our modern courses across a range of in-demand skills will give you the
+				knowledge you need to live the life you want.
+			</p>
+			<a href="/blog" class="button bg-gradient-pink white">Get Started</a>
 		</div>
 	</div>
 </section>
@@ -29,6 +20,13 @@
 
 	.hero-text {
 		max-width: 50ch;
+		padding: 3rem;
+		background-image: linear-gradient(
+			135deg,
+			hsla(233, 54%, 16%, 0.95),
+			hsla(234, 25%, 52%, 0.9)
+		);
+		border-radius: 2rem;
 	}
 
 	h1 {

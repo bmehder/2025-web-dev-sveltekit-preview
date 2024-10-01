@@ -2,7 +2,7 @@
 	export let title = 'Add title here!'
 </script>
 
-<div class="block pink">
+<div class="block bg-gradient-pink white">
 	<h2>{title}</h2>
 </div>
 
