@@ -1,4 +1,4 @@
-<footer class="footer bg-blue-900">
+<footer class="bg-blue-900">
 	<div class="boxed flex-container">
 		<a href="/">
 			<img

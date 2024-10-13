@@ -4,19 +4,22 @@
 	export let data
 </script>
 
-<section class="page-title">
-	<div class="boxed">
+<section class="bg-blue-900 white">
+	<div class="boxed space">
 		<h1>Blog</h1>
-
-		<div class="auto-fit" style="margin-top: 3rem;">
-			{#each data.posts as post}
-				<Card
-					title={post.title}
-					text={post.body}
-					href="/blog/{post.id}"
-					src={'https://picsum.photos/200/200' + '?' + Math.random()}
-				/>
-			{/each}
-		</div>
 	</div>
 </section>
+
+<section class="cards">
+	<div class="boxed space auto-fit">
+		{#each data.posts as post}
+			<Card item={post} />
+		{/each}
+	</div>
+</section>
+
+<style>
+	.cards {
+		padding-top: 3rem;
+	}
+</style>

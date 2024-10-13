@@ -1,15 +1,15 @@
 <form>
 	<div class="form-container flow">
 		<div>
-			<label for="first-name">First Name <sup>*</sup></label>
+			<label for="first-name">First Name <span>*</span></label>
 			<input type="text" name="first-name" id="first-name" required />
 		</div>
 		<div>
-			<label for="last-name">Last Name <sup>*</sup></label>
+			<label for="last-name">Last Name <span>*</span></label>
 			<input type="text" name="last-name" id="last-name" required />
 		</div>
 		<div>
-			<label for="email">Email <sup>*</sup></label>
+			<label for="email">Email <span>*</span></label>
 			<input type="email" name="email" id="email" required />
 		</div>
 		<div>
@@ -17,11 +17,11 @@
 			<input type="tel" name="phone" id="phone" />
 		</div>
 		<div>
-			<label for="message">Message <sup>*</sup></label>
+			<label for="message">Message <span>*</span></label>
 			<textarea name="message" id="message" rows="10" required></textarea>
 		</div>
 		<div>
-			<button class="button bg-pink-600 white">Submit Message</button>
+			<button class="bg-pink-600 white">Submit Message</button>
 		</div>
 	</div>
 </form>
@@ -41,16 +41,25 @@
 		font-weight: 600;
 	}
 
-	sup {
-		color: var(--pink-600);
-	}
-
-	.button {
-		padding: 1.5rem;
+	input,
+	textarea {
+		padding: 1rem;
+		font: inherit;
+		border: 1px solid var(--gray);
 		border-radius: 4px;
 	}
 
-	.button:hover {
+	span {
+		color: var(--pink-600);
+	}
+
+	button {
+		padding: 1.5rem;
+		border-radius: 4px;
+		border: none;
+	}
+
+	button:hover {
 		background: var(--blue-900);
 	}
 </style>

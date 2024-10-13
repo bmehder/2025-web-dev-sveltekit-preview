@@ -2,12 +2,12 @@
 	export let title = 'Add title here!'
 </script>
 
-<div class="block bg-gradient-pink white">
+<li class="bg-gradient-pink white">
 	<h2>{title}</h2>
-</div>
+</li>
 
 <style>
-	.block {
+	li {
 		padding-block: 4rem 3rem;
 		padding-inline: 2rem;
 		border-radius: 1rem;
